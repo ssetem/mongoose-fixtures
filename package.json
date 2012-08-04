@@ -10,12 +10,12 @@
     , "web": "https://github.com/powmedia"
     }
   ]
-, "version": "0.1"
+, "version": "0.1.0"
 , "repository" :
   { "type" : "git"
   , "url" : "http://github.com/powmedia/mongoose-fixtures.git"
   }
-, "bugs" : { "web" : "http://github.com/powmedia/mongoose-fixtures/issues" }
+, "bugs" : { "url" : "http://github.com/powmedia/mongoose-fixtures/issues" }
 , "licenses" :
   [ { "type" : "MIT"
     , "url" : "http://github.com/powmedia/mongoose-fixtures/raw/master/LICENSE"
