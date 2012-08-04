@@ -64,7 +64,7 @@ function insertCollection(modelName, data, callback) {
     var Model = mongoose.model(modelName);
     
     //Clear existing collection
-    Model.collection.remove(function(err) {
+    Model.collection.drop(function(err) {
         if (err) return callback(err);
         
         //Convert object to array
