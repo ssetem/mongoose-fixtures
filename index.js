@@ -65,8 +65,11 @@ function insertCollection(modelName, data, callback) {
     
     //Clear existing collection
     Model.collection.drop(function(err) {
-        if (err) return callback(err);
-        
+
+        //ignore collection error if doesnt exist
+        if (err && err.message != "ns not found") {
+          return callback(err);
+        }
         //Convert object to array
         var items = [];
         if (Array.isArray(data)) {
